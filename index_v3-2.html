@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Souza Instalações - Forro PVC, elétrica e termografia. Faça seu orçamento online.">
+<title>Souza Instalações | Orçamento Online</title>
+<style>
+:root{--azul:#081d35;--azul2:#104b7d;--amarelo:#ffc400;--verde:#149447;--bg:#f4f6f8;--card:#fff;--text:#17202a;--muted:#667085;--danger:#c62828}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,var(--azul),var(--azul2));color:#fff;box-shadow:0 2px 12px #0003}
+.nav{max-width:1150px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:26px;font-weight:900}.logo span{color:var(--amarelo)}
+nav a{color:#fff;text-decoration:none;font-weight:bold;margin-left:18px}
+.hero{background:linear-gradient(135deg,#081d35f5,#104b7de8);color:#fff;padding:70px 20px}
+.hero-inner{max-width:1150px;margin:auto}.hero h1{font-size:45px;margin:0 0 12px}.hero p{font-size:19px;line-height:1.5;max-width:720px}
+.btn{border:0;border-radius:9px;padding:13px 20px;background:var(--amarelo);color:#111;font-weight:900;cursor:pointer;font-size:16px;text-decoration:none;display:inline-block}
+.btn.green{background:var(--verde);color:#fff}.btn.dark{background:var(--azul);color:#fff}.btn.gray{background:#e7ebef;color:#222}
+.container{max-width:1150px;margin:auto;padding:45px 20px}
+h2{text-align:center;color:var(--azul);font-size:30px;margin:0 0 25px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card,.box{background:var(--card);border-radius:15px;padding:24px;box-shadow:0 5px 22px #00000010}
+.card h3{margin-top:0;color:var(--azul)}
+.quote{background:#fff;border-radius:16px;padding:25px;box-shadow:0 5px 24px #0002}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.full{grid-column:1/-1}
+label{display:block;font-weight:800;margin-bottom:7px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd3db;border-radius:8px;font-size:16px;background:#fff}
+textarea{min-height:85px;resize:vertical}
+.room-list{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.room{padding:12px;background:#eef2f5;border:2px solid transparent;border-radius:8px;text-align:center;font-weight:bold;cursor:pointer}
+.room.active{border-color:var(--amarelo);background:#fff8cf}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.ambiente-card{border:1px solid #d8dee5;border-radius:12px;padding:16px;margin-top:15px;background:#fafbfc}
+.ambiente-top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.ambiente-top h3{margin:0;color:var(--azul)}
+.remove{border:0;background:#ffe5e5;color:var(--danger);padding:7px 10px;border-radius:7px;cursor:pointer;font-weight:bold}
+.resumo{margin-top:25px;background:var(--azul);color:#fff;border-radius:14px;padding:22px}
+.resumo h3{margin-top:0;color:var(--amarelo)}
+.row{display:flex;justify-content:space-between;gap:20px;padding:8px 0;border-bottom:1px solid #ffffff22}
+.row:last-child{border-bottom:0}.total{font-size:30px;font-weight:900;color:var(--amarelo);margin-top:10px}
+.notice{font-size:13px;color:#667085;margin-top:7px;line-height:1.4}
+.whats{background:var(--verde);color:#fff;padding:14px 18px;border-radius:9px;text-decoration:none;font-weight:900;display:inline-block}
+footer{background:var(--azul);color:#fff;text-align:center;padding:35px 20px;margin-top:20px}
+@media(max-width:850px){.services{grid-template-columns:repeat(2,1fr)}.room-list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){nav{display:none}.hero h1{font-size:34px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.services{grid-template-columns:1fr}.room-list{grid-template-columns:1fr}.row{flex-direction:column;gap:3px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+  <div class="logo">Souza <span>Instalações</span></div>
+  <nav><a href="#servicos">Serviços</a><a href="#orcamento">Orçamento</a><a href="#contato">Contato</a></nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-inner">
+  <h1>Souza Instalações</h1>
+  <p>Forro PVC • Elétrica • Termografia</p>
+  <p>Faça uma simulação de orçamento de forro PVC, adicione vários ambientes e envie o resumo diretamente pelo WhatsApp.</p>
+  <a class="btn" href="#orcamento">Fazer orçamento agora</a>
+</div>
+</section>
+
+<section id="servicos" class="container">
+<h2>Nossos serviços</h2>
+<div class="services">
+  <div class="card"><h3>Forro PVC</h3><p>Instalação de forro PVC com cálculo de área, peças e perdas.</p></div>
+  <div class="card"><h3>Elétrica</h3><p>Instalações e manutenção elétrica residencial e comercial.</p></div>
+  <div class="card"><h3>Termografia</h3><p>Inspeção termográfica para identificar pontos de aquecimento.</p></div>
+  <div class="card"><h3>Manutenção</h3><p>Serviços de instalação, manutenção e adequação.</p></div>
+</div>
+</section>
+
+<section id="orcamento" class="container">
+<h2>Orçamento Inteligente de Forro PVC</h2>
+<div class="quote">
+
+<div class="grid">
+  <div>
+    <label for="cliente">Nome do cliente</label>
+    <input id="cliente" placeholder="Digite seu nome">
+  </div>
+  <div>
+    <label for="telefone">Telefone / WhatsApp</label>
+    <input id="telefone" placeholder="(22) 99999-9999">
+  </div>
+  <div class="full">
+    <label for="endereco">Endereço ou bairro</label>
+    <input id="endereco" placeholder="Onde será realizado o serviço?">
+  </div>
+
+  <div class="full">
+    <label>Escolha o ambiente</label>
+    <div class="room-list" id="rooms">
+      <div class="room active" data-room="Cozinha">Cozinha</div>
+      <div class="room" data-room="Sala">Sala</div>
+      <div class="room" data-room="Quarto">Quarto</div>
+      <div class="room" data-room="Quarto 1">Quarto 1</div>
+      <div class="room" data-room="Quarto 2">Quarto 2</div>
+      <div class="room" data-room="Quarto 4">Quarto 4</div>
+      <div class="room" data-room="Varanda">Varanda</div>
+      <div class="room" data-room="Banheiro">Banheiro</div>
+      <div class="room" data-room="Outro">Outro</div>
+    </div>
+  </div>
+
+  <div>
+    <label for="largura">Largura (m)</label>
+    <input id="largura" type="number" min="0" step="0.01" placeholder="Ex.: 3,50">
+  </div>
+  <div>
+    <label for="comprimento">Comprimento (m)</label>
+    <input id="comprimento" type="number" min="0" step="0.01" placeholder="Ex.: 4,00">
+  </div>
+
+  <div>
+    <label for="larguraFolha">Comprimento disponível da folha/peça</label>
+    <select id="larguraFolha">
+      <option value="1">1 metro</option><option value="2">2 metros</option>
+      <option value="3">3 metros</option><option value="3.5">3,50 metros</option>
+      <option value="4">4 metros</option><option value="5">5 metros</option><option value="6">6 metros</option>
+    </select>
+  </div>
+  <div>
+    <label for="precoPVC">Preço da folha/peça de PVC (R$)</label>
+    <input id="precoPVC" type="number" min="0" step="0.01" value="0">
+  </div>
+
+  <div>
+    <label for="metalon">Metalon (quantidade)</label>
+    <input id="metalon" type="number" min="0" step="1" value="0">
+    <div class="notice">R$ 22,00 por unidade.</div>
+  </div>
+  <div>
+    <label for="rodaforro">Rodaforro (quantidade)</label>
+    <input id="rodaforro" type="number" min="0" step="1" value="0">
+    <div class="notice">R$ 45,00 por unidade.</div>
+  </div>
+
+  <div class="full">
+    <label for="observacao">Observações</label>
+    <textarea id="observacao" placeholder="Ex.: retirar forro antigo, recortes, iluminação, acesso difícil..."></textarea>
+  </div>
+</div>
+
+<div class="actions">
+  <button class="btn" id="adicionar">+ Adicionar ambiente ao orçamento</button>
+  <button class="btn gray" id="limparAtual">Limpar campos</button>
+</div>
+
+<div id="ambientes"></div>
+
+<div class="resumo" id="resumo" style="display:none">
+  <h3>Resumo do orçamento</h3>
+  <div id="linhas"></div>
+  <div class="row"><span>Área total:</span><strong id="areaTotal">0 m²</strong></div>
+  <div class="row"><span>Material informado:</span><strong id="materialTotal">R$ 0,00</strong></div>
+  <div class="row"><span>Valor pelo m² (R$ 60,00/m²):</span><strong id="m2Total">R$ 0,00</strong></div>
+  <div class="total">TOTAL: <span id="totalGeral">R$ 0,00</span></div>
+  <div class="notice" style="color:#dce6ef">
+    Regra aplicada: para cada ambiente, o orçamento considera o maior entre
+    área × R$ 60,00 e materiais informados + R$ 200,00.
+  </div>
+  <div class="actions">
+    <button class="btn green" id="whatsapp">Enviar orçamento pelo WhatsApp</button>
+    <button class="btn dark" id="imprimir">Imprimir orçamento</button>
+  </div>
+</div>
+
+</div>
+</section>
+
+<section id="contato" class="container">
+<h2>Contato</h2>
+<div class="card" style="text-align:center">
+  <p><strong>Souza Instalações</strong></p>
+  <p>Forro PVC • Elétrica • Termografia</p>
+  <p>(22) 97404-3596</p>
+  <a class="whats" href="https://wa.me/5522974043596" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<strong>Souza Instalações</strong><br>
+Forro PVC • Elétrica • Termografia<br>
+(22) 97404-3596
+</footer>
+
+<script>
+const ambientes=[];
+let ambienteSelecionado="Cozinha";
+
+document.querySelectorAll(".room").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.querySelectorAll(".room").forEach(x=>x.classList.remove("active"));
+    el.classList.add("active");
+    ambienteSelecionado=el.dataset.room;
+  });
+});
+
+function moeda(v){
+  return Number(v).toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+}
+function num(id){return parseFloat(document.getElementById(id).value)||0;}
+function limparCampos(){
+  ["largura","comprimento","metalon","rodaforro"].forEach(id=>document.getElementById(id).value=id==="metalon"||id==="rodaforro"?"0":"");
+  document.getElementById("observacao").value="";
+}
+function calcularAmbiente(){
+  const largura=num("largura"), comprimento=num("comprimento");
+  const precoPVC=num("precoPVC");
+  const metalon=Math.max(0,Math.floor(num("metalon")));
+  const rodaforro=Math.max(0,Math.floor(num("rodaforro")));
+
+  if(largura<=0||comprimento<=0){
+    alert("Informe largura e comprimento maiores que zero.");
+    return null;
+  }
+
+  /*
+    CÁLCULO V3 - APROVEITAMENTO DE FOLHAS INTEIRAS
+
+    A lista abaixo representa os comprimentos disponíveis de uma folha:
+    1 / 2 / 3 / 3,50 / 4 / 5 / 6 metros.
+
+    O sistema procura uma combinação exata ou a combinação com menor
+    sobra para atender a largura do ambiente.
+
+    Exemplo:
+      ambiente = 1,50 m
+      folha = 3,00 m
+      3,00 / 1,50 = 2 cortes exatos.
+
+    Portanto, duas faixas de 1,50 m podem sair de uma folha inteira de 3 m,
+    em vez de cobrar duas folhas de 1,50 m.
+
+    Se não houver divisão exata, o sistema compra a quantidade necessária
+    de folhas inteiras e considera a sobra como perda.
+  */
+  const comprimentos=[1,2,3,3.5,4,5,6];
+
+  // A dimensão usada para cortar a folha é a largura do ambiente.
+  // O comprimento do ambiente é a extensão de cada faixa.
+  const alvo=largura;
+
+  function inteiro(v){
+    return Math.round(v*100);
+  }
+
+  // Encontra a folha que divide exatamente a largura do ambiente.
+  // Se houver mais de uma, escolhe a que gera menos desperdício.
+  const exatas=comprimentos.filter(f=>{
+    const q=f/alvo;
+    return Math.abs(q-Math.round(q))<1e-9;
+  });
+
+  let folhaEscolhida=null;
+  let pecasPorFolha=1;
+  let folhasInteiras=0;
+  let perdaLargura=0;
+
+  if(exatas.length){
+    // Entre divisões exatas, prioriza a menor folha que consegue dividir.
+    folhaEscolhida=Math.min(...exatas);
+    pecasPorFolha=Math.round(folhaEscolhida/alvo);
+
+    // Cada folha produz várias faixas. Para cobrir a largura total,
+    // precisamos de uma quantidade de faixas igual a 1 quando a folha
+    // é usada como faixa inteira; aqui a unidade de compra é a peça
+    // cortada para o ambiente.
+    // Como o corte é transversal, o número de folhas necessárias
+    // depende do comprimento do ambiente.
+    folhasInteiras=1;
+    perdaLargura=0;
+  }else{
+    // Sem divisão exata: procura a menor quantidade de folhas inteiras
+    // cuja soma dos comprimentos cubra a largura do ambiente.
+    let melhor=null;
+
+    for(const f of comprimentos){
+      const qtd=Math.ceil(alvo/f);
+      const sobra=qtd*f-alvo;
+      const areaSobra=sobra*comprimento;
+      const candidato={f,qtd,sobra,areaSobra};
+
+      if(!melhor ||
+         candidato.areaSobra<melhor.areaSobra-1e-9 ||
+         (Math.abs(candidato.areaSobra-melhor.areaSobra)<1e-9 && candidato.qtd<melhor.qtd)){
+        melhor=candidato;
+      }
+    }
+
+    folhaEscolhida=melhor.f;
+    pecasPorFolha=1;
+    folhasInteiras=melhor.qtd;
+    perdaLargura=melhor.sobra;
+  }
+
+  /*
+    Para cada folha inteira escolhida, o comprimento precisa ser igual
+    ao comprimento do ambiente. O preço informado é o preço de uma folha.
+
+    Em uma divisão exata, uma folha de 3 m pode fornecer 2 faixas de 1,50 m.
+    Assim, para saber quantas folhas inteiras comprar, calculamos quantas
+    faixas são necessárias para atravessar o comprimento do ambiente.
+    Cada faixa corresponde à largura do ambiente.
+  */
+
+  // Número de faixas necessárias ao longo do comprimento.
+  // A folha tem a largura "folhaEscolhida" e será cortada na dimensão
+  // da largura do ambiente; a extensão da faixa acompanha o comprimento.
+  const faixasNecessarias=Math.ceil(comprimento/folhaEscolhida);
+
+  /*
+    Caso clássico do usuário:
+      largura 1,50 m, folha 3 m:
+      3 / 1,50 = 2 faixas por folha.
+
+    Para uma área 1,50 x 3,00:
+      2 faixas de 1,50 x 3,00.
+      Uma folha de 3,00 x 3,00 pode fornecer exatamente essas 2 faixas.
+  */
+  let folhasCompra, faixasPorFolha, areaComprada, perda;
+
+  if(exatas.length){
+    // Uma folha permite cortar várias larguras iguais.
+    faixasPorFolha=pecasPorFolha;
+    // A quantidade de faixas necessárias para cobrir o comprimento
+    // é determinada pelo comprimento da folha disponível.
+    // A folha é comprada inteira e seu comprimento é usado para cobrir
+    // a extensão do ambiente.
+    const faixasNaExtensao=Math.ceil(comprimento/folhaEscolhida);
+    folhasCompra=Math.ceil(faixasNaExtensao/faixasPorFolha);
+    areaComprada=folhasCompra*folhaEscolhida*folhaEscolhida;
+    perda=Math.max(0,areaComprada-(largura*comprimento));
+  }else{
+    // Sem divisão exata, usa a combinação conservadora escolhida.
+    folhasCompra=Math.ceil(largura/folhaEscolhida)*Math.ceil(comprimento/folhaEscolhida);
+    areaComprada=folhasCompra*folhaEscolhida*folhaEscolhida;
+    perda=Math.max(0,areaComprada-(largura*comprimento));
+  }
+
+  const area=largura*comprimento;
+  const custoPVC=folhasCompra*precoPVC;
+  const custoMetalon=metalon*22;
+  const custoRodaforro=rodaforro*45;
+  const material=custoPVC+custoMetalon+custoRodaforro;
+
+  const valorM2=area*60;
+  const piso=material+200;
+  const total=Math.max(valorM2,piso);
+
+  return {
+    ambiente:ambienteSelecionado,largura,comprimento,area,
+    folha:folhaEscolhida,faixas:folhasCompra,
+    folhasCompra,pecasPorFolha,areaPVC:areaComprada,perda,
+    custoPVC,custoMetalon,custoRodaforro,material,valorM2,total,
+    observacao:document.getElementById("observacao").value.trim()
+  };
+}
+document.getElementById("adicionar").addEventListener("click",()=>{
+  const item=calcularAmbiente();
+  if(!item)return;
+  ambientes.push(item);
+  render();
+  limparCampos();
+});
+
+function render(){
+  const box=document.getElementById("ambientes");
+  box.innerHTML="";
+  ambientes.forEach((a,i)=>{
+    const div=document.createElement("div");
+    div.className="ambiente-card";
+    div.innerHTML=`
+      <div class="ambiente-top">
+        <h3>${a.ambiente}</h3>
+        <button class="remove" data-i="${i}">Excluir</button>
+      </div>
+      <p><strong>${a.largura.toFixed(2)} × ${a.comprimento.toFixed(2)} m</strong> = ${a.area.toFixed(2)} m²</p>
+      <p>${a.folhasCompra} folha(s) inteira(s) de ${String(a.folha).replace(".",",")} m • ${a.pecasPorFolha > 1 ? a.pecasPorFolha+" corte(s) aproveitado(s) por folha" : "sem divisão exata"} • área comprada: ${a.areaPVC.toFixed(2)} m² • perda: ${a.perda.toFixed(2)} m²</p>
+      <p>Material: ${moeda(a.material)} • Orçamento do ambiente: <strong>${moeda(a.total)}</strong></p>
+    `;
+    box.appendChild(div);
+  });
+
+  box.querySelectorAll(".remove").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      ambientes.splice(Number(btn.dataset.i),1);
+      render();
+    });
+  });
+
+  if(!ambientes.length){
+    document.getElementById("resumo").style.display="none";
+    return;
+  }
+
+  let area=0,material=0,m2=0,total=0;
+  ambientes.forEach(a=>{area+=a.area;material+=a.material;m2+=a.valorM2;total+=a.total;});
+
+  document.getElementById("resumo").style.display="block";
+  document.getElementById("areaTotal").textContent=area.toFixed(2).replace(".",",")+" m²";
+  document.getElementById("materialTotal").textContent=moeda(material);
+  document.getElementById("m2Total").textContent=moeda(m2);
+  document.getElementById("totalGeral").textContent=moeda(total);
+  document.getElementById("linhas").innerHTML=ambientes.map((a,i)=>
+    `<div class="row"><span>${i+1}. ${a.ambiente} (${a.area.toFixed(2)} m²)</span><strong>${moeda(a.total)}</strong></div>`
+  ).join("");
+}
+
+document.getElementById("limparAtual").addEventListener("click",limparCampos);
+
+function mensagemWhatsApp(){
+  const nome=document.getElementById("cliente").value.trim()||"Não informado";
+  const tel=document.getElementById("telefone").value.trim()||"Não informado";
+  const end=document.getElementById("endereco").value.trim()||"Não informado";
+  const obsGeral=document.getElementById("observacao").value.trim();
+  let area=0,total=0;
+  let texto=`*SOUZA INSTALAÇÕES - ORÇAMENTO DE FORRO PVC*%0A%0A`;
+  texto+=`Cliente: ${nome}%0AWhatsApp: ${tel}%0AEndereço: ${end}%0A%0A`;
+  ambientes.forEach((a,i)=>{
+    area+=a.area; total+=a.total;
+    texto+=`*${i+1}. ${a.ambiente}*%0A`;
+    texto+=`Medida: ${a.largura.toFixed(2)} x ${a.comprimento.toFixed(2)} m%0A`;
+    texto+=`Área: ${a.area.toFixed(2)} m²%0A`;
+    texto+=`Folhas inteiras: ${a.folhasCompra} x ${String(a.folha).replace(".",",")} m%0A`;
+    texto+=`Aproveitamento: ${a.pecasPorFolha > 1 ? a.pecasPorFolha+" corte(s) por folha" : "sem divisão exata"}%0A`;
+    texto+=`Área comprada: ${a.areaPVC.toFixed(2)} m²%0A`;
+    texto+=`Perda calculada: ${a.perda.toFixed(2)} m²%0A`;
+    texto+=`Metalon: ${a.custoMetalon?moeda(a.custoMetalon):"não informado"}%0A`;
+    texto+=`Rodaforro: ${a.custoRodaforro?moeda(a.custoRodaforro):"não informado"}%0A`;
+    if(a.observacao)texto+=`Observação: ${encodeURIComponent(a.observacao)}%0A`;
+    texto+=`Valor do ambiente: *${encodeURIComponent(moeda(a.total))}*%0A%0A`;
+  });
+  texto+=`Área total: ${area.toFixed(2)} m²%0A`;
+  texto+=`*TOTAL DO ORÇAMENTO: ${encodeURIComponent(moeda(total))}*%0A`;
+  if(obsGeral)texto+=`Observação geral: ${encodeURIComponent(obsGeral)}%0A`;
+  texto+=`%0AOrçamento sujeito à conferência das medidas no local.`;
+  return "https://wa.me/5522974043596?text="+texto;
+}
+
+document.getElementById("whatsapp").addEventListener("click",()=>{
+  if(!ambientes.length){alert("Adicione pelo menos um ambiente.");return;}
+  window.open(mensagemWhatsApp(),"_blank");
+});
+
+document.getElementById("imprimir").addEventListener("click",()=>{
+  if(!ambientes.length){alert("Adicione pelo menos um ambiente.");return;}
+  window.print();
+});
+</script>
+</body>
+</html>
