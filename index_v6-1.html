@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Souza Instalações - Forro PVC, elétrica e termografia. Faça seu orçamento online.">
+<title>Souza Instalações | Orçamento Online</title>
+<style>
+:root{--azul:#081d35;--azul2:#104b7d;--amarelo:#ffc400;--verde:#149447;--bg:#f4f6f8;--card:#fff;--text:#17202a;--muted:#667085;--danger:#c62828}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+header{position:sticky;top:0;z-index:20;background:linear-gradient(135deg,var(--azul),var(--azul2));color:#fff;box-shadow:0 2px 12px #0003}
+.nav{max-width:1150px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:26px;font-weight:900}.logo span{color:var(--amarelo)}
+nav a{color:#fff;text-decoration:none;font-weight:bold;margin-left:18px}
+.hero{background:linear-gradient(135deg,#081d35f5,#104b7de8);color:#fff;padding:70px 20px}
+.hero-inner{max-width:1150px;margin:auto}.hero h1{font-size:45px;margin:0 0 12px}.hero p{font-size:19px;line-height:1.5;max-width:720px}
+.btn{border:0;border-radius:9px;padding:13px 20px;background:var(--amarelo);color:#111;font-weight:900;cursor:pointer;font-size:16px;text-decoration:none;display:inline-block}
+.btn.green{background:var(--verde);color:#fff}.btn.dark{background:var(--azul);color:#fff}.btn.gray{background:#e7ebef;color:#222}
+.container{max-width:1150px;margin:auto;padding:45px 20px}
+h2{text-align:center;color:var(--azul);font-size:30px;margin:0 0 25px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card,.box{background:var(--card);border-radius:15px;padding:24px;box-shadow:0 5px 22px #00000010}
+.card h3{margin-top:0;color:var(--azul)}
+.quote{background:#fff;border-radius:16px;padding:25px;box-shadow:0 5px 24px #0002}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.full{grid-column:1/-1}
+label{display:block;font-weight:800;margin-bottom:7px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #cbd3db;border-radius:8px;font-size:16px;background:#fff}
+textarea{min-height:85px;resize:vertical}
+.room-list{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.room{padding:12px;background:#eef2f5;border:2px solid transparent;border-radius:8px;text-align:center;font-weight:bold;cursor:pointer}
+.room.active{border-color:var(--amarelo);background:#fff8cf}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.ambiente-card{border:1px solid #d8dee5;border-radius:12px;padding:16px;margin-top:15px;background:#fafbfc}
+.ambiente-top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.ambiente-top h3{margin:0;color:var(--azul)}
+.remove{border:0;background:#ffe5e5;color:var(--danger);padding:7px 10px;border-radius:7px;cursor:pointer;font-weight:bold}
+.resumo{margin-top:25px;background:var(--azul);color:#fff;border-radius:14px;padding:22px}
+.resumo h3{margin-top:0;color:var(--amarelo)}
+.row{display:flex;justify-content:space-between;gap:20px;padding:8px 0;border-bottom:1px solid #ffffff22}
+.row:last-child{border-bottom:0}.total{font-size:30px;font-weight:900;color:var(--amarelo);margin-top:10px}
+.notice{font-size:13px;color:#667085;margin-top:7px;line-height:1.4}
+.whats{background:var(--verde);color:#fff;padding:14px 18px;border-radius:9px;text-decoration:none;font-weight:900;display:inline-block}
+footer{background:var(--azul);color:#fff;text-align:center;padding:35px 20px;margin-top:20px}
+@media(max-width:850px){.services{grid-template-columns:repeat(2,1fr)}.room-list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){nav{display:none}.hero h1{font-size:34px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.services{grid-template-columns:1fr}.room-list{grid-template-columns:1fr}.row{flex-direction:column;gap:3px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+  <div class="logo">Souza <span>Instalações</span></div>
+  <nav><a href="#servicos">Serviços</a><a href="#orcamento">Orçamento</a><a href="#contato">Contato</a></nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="hero-inner">
+  <h1>Souza Instalações</h1>
+  <p>Forro PVC • Elétrica • Termografia</p>
+  <p>Faça uma simulação de orçamento de forro PVC, adicione vários ambientes e envie o resumo diretamente pelo WhatsApp.</p>
+  <a class="btn" href="#orcamento">Fazer orçamento agora</a>
+</div>
+</section>
+
+<section id="servicos" class="container">
+<h2>Nossos serviços</h2>
+<div class="services">
+  <div class="card"><h3>Forro PVC</h3><p>Instalação de forro PVC com cálculo de área, peças e perdas.</p></div>
+  <div class="card"><h3>Elétrica</h3><p>Instalações e manutenção elétrica residencial e comercial.</p></div>
+  <div class="card"><h3>Termografia</h3><p>Inspeção termográfica para identificar pontos de aquecimento.</p></div>
+  <div class="card"><h3>Manutenção</h3><p>Serviços de instalação, manutenção e adequação.</p></div>
+</div>
+</section>
+
+<section id="orcamento" class="container">
+<h2>Orçamento Inteligente de Forro PVC</h2>
+<div class="quote">
+
+<div class="grid">
+  <div>
+    <label for="cliente">Nome do cliente</label>
+    <input id="cliente" placeholder="Digite seu nome">
+  </div>
+  <div>
+    <label for="telefone">Telefone / WhatsApp</label>
+    <input id="telefone" placeholder="(22) 99999-9999">
+  </div>
+  <div class="full">
+    <label for="endereco">Endereço ou bairro</label>
+    <input id="endereco" placeholder="Onde será realizado o serviço?">
+  </div>
+
+  <div class="full">
+    <label>Escolha o ambiente</label>
+    <div class="room-list" id="rooms">
+      <div class="room active" data-room="Cozinha">Cozinha</div>
+      <div class="room" data-room="Sala">Sala</div>
+      <div class="room" data-room="Quarto">Quarto</div>
+      <div class="room" data-room="Quarto 1">Quarto 1</div>
+      <div class="room" data-room="Quarto 2">Quarto 2</div>
+      <div class="room" data-room="Quarto 4">Quarto 4</div>
+      <div class="room" data-room="Varanda">Varanda</div>
+      <div class="room" data-room="Banheiro">Banheiro</div>
+      <div class="room" data-room="Outro">Outro</div>
+    </div>
+  </div>
+
+  <div>
+    <label for="largura">Largura (m)</label>
+    <input id="largura" type="number" min="0" step="0.01" placeholder="Ex.: 3,50">
+  </div>
+  <div>
+    <label for="comprimento">Comprimento (m)</label>
+    <input id="comprimento" type="number" min="0" step="0.01" placeholder="Ex.: 4,00">
+  </div>
+
+  <div class="full">
+    <div class="notice"><strong>Cálculo automático do PVC:</strong> o sistema escolhe internamente o comprimento de folha disponível (1, 2, 3, 3,50, 4, 5 ou 6 m) que atende a medida informada. Se a medida necessária ultrapassar 6 m, o sistema avisará que o tamanho não está disponível.</div>
+  </div>
+
+  <div>
+    <label for="metalon">Metalon (quantidade)</label>
+    <input id="metalon" type="number" min="0" step="1" value="0">
+    <div id="metalonAviso" class="notice">Quantidade calculada automaticamente pela largura quando o comprimento for até 5 m.</div>
+  </div>
+  <div>
+    <label for="rodaforro">Rodaforro (quantidade)</label>
+    <input id="rodaforro" type="number" min="0" step="1" value="0">
+    <div class="notice">Valor calculado internamente.</div>
+  </div>
+
+  <div class="full">
+    <label for="observacao">Observações</label>
+    <textarea id="observacao" placeholder="Ex.: retirar forro antigo, recortes, iluminação, acesso difícil..."></textarea>
+  </div>
+
+  <div class="full" style="margin-top:4px">
+    <button class="btn green" id="calcularAtual" type="button">Calcular orçamento</button>
+    <div id="previewCalculo" class="notice" style="display:none;margin-top:12px;font-size:18px;font-weight:800"></div>
+  </div>
+</div>
+
+<div class="actions">
+  <button class="btn" id="adicionar">+ Adicionar ambiente ao orçamento</button>
+  <button class="btn dark" id="salvarOrcamentoTopo">Salvar orçamento</button>
+  <button class="btn gray" id="limparAtual">Limpar campos</button>
+</div>
+
+<div id="ambientes"></div>
+
+<div class="resumo" id="resumo" style="display:none">
+  <h3>Resumo do orçamento</h3>
+  <div id="linhas"></div>
+  <div class="row"><span>Materiais:</span><strong>calculados internamente</strong></div>
+  <div class="total">TOTAL: <span id="totalGeral">R$ 0,00</span></div>
+  <div class="notice" style="color:#dce6ef">
+    Regra aplicada: para cada ambiente, o orçamento considera o maior entre
+    área × R$ 60,00 e materiais informados + R$ 200,00.
+  </div>
+  <div class="actions">
+    <button class="btn green" id="whatsapp">Enviar orçamento pelo WhatsApp</button><button class="btn" id="salvarOrcamento">Salvar orçamento</button>
+    <button class="btn dark" id="imprimir">Imprimir orçamento</button>
+  </div>
+</div>
+
+</div>
+</section>
+
+
+<section class="container">
+<h2>Conheça nossos serviços</h2>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:15px">
+<img style="width:100%;height:210px;object-fit:cover;border-radius:14px" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Construção e acabamento">
+<img style="width:100%;height:210px;object-fit:cover;border-radius:14px" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Acabamento interno">
+<img style="width:100%;height:210px;object-fit:cover;border-radius:14px" src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=80" alt="Serviço elétrico">
+<img style="width:100%;height:210px;object-fit:cover;border-radius:14px" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80" alt="Inspeção técnica">
+<img style="width:100%;height:210px;object-fit:cover;border-radius:14px" src="https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=900&q=80" alt="Ambiente residencial">
+<img style="width:100%;height:210px;object-fit:cover;border-radius:14px" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Interior">
+</div>
+</section>
+
+<section id="salvos" class="container">
+<h2>Orçamentos salvos</h2>
+<div class="card">
+  <div class="grid">
+    <div>
+      <label for="busca">Buscar cliente</label>
+      <input id="busca" placeholder="Nome ou telefone">
+    </div>
+    <div style="display:flex;align-items:end;gap:10px">
+      <button class="btn dark" id="buscar">Buscar</button>
+      <button class="btn gray" id="todos">Todos</button>
+    </div>
+  </div>
+  <div class="notice">Os orçamentos ficam salvos neste navegador. Para consultar depois, pesquise pelo nome ou telefone usado no cadastro.</div>
+  <div id="listaSalvos" style="margin-top:15px"></div>
+</div>
+</section>
+<section id="contato" class="container">
+<h2>Contato</h2>
+<div class="card" style="text-align:center">
+  <p><strong>Souza Instalações</strong></p>
+  <p>Forro PVC • Elétrica • Termografia</p>
+  <p>(22) 97404-3596</p>
+  <a class="whats" href="https://wa.me/5522974043596" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<strong>Souza Instalações</strong><br>
+Forro PVC • Elétrica • Termografia<br>
+(22) 97404-3596
+</footer>
+
+<script>
+const ambientes=[];
+let ambienteSelecionado="Cozinha";
+
+document.querySelectorAll(".room").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.querySelectorAll(".room").forEach(x=>x.classList.remove("active"));
+    el.classList.add("active");
+    ambienteSelecionado=el.dataset.room;
+  });
+});
+
+function moeda(v){
+  return Number(v).toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+}
+function num(id){return parseFloat(document.getElementById(id).value)||0;}
+function atualizarMetalon(){
+  const comprimento=num("comprimento");
+  const largura=num("largura");
+  const campo=document.getElementById("metalon");
+  const aviso=document.getElementById("metalonAviso");
+  if(comprimento>0 && comprimento<=5 && largura>0){
+    const qtd=Math.max(0,Math.ceil((largura/0.60)-1));
+    campo.value=qtd;
+    campo.readOnly=true;
+    aviso.textContent="Automático: largura ÷ 0,60 − 1, arredondando para cima.";
+  }else if(comprimento>5){
+    campo.readOnly=false;
+    aviso.textContent="Comprimento acima de 5 m: informe manualmente a quantidade de Metalon.";
+  }else{
+    campo.readOnly=false;
+    aviso.textContent="Quantidade calculada automaticamente pela largura quando o comprimento for até 5 m.";
+  }
+}
+document.getElementById("largura").addEventListener("input",atualizarMetalon);
+document.getElementById("comprimento").addEventListener("input",atualizarMetalon);
+function limparCampos(){
+  ["largura","comprimento","metalon","rodaforro"].forEach(id=>document.getElementById(id).value=id==="metalon"||id==="rodaforro"?"0":"");
+  document.getElementById("observacao").value="";
+  document.getElementById("metalon").readOnly=false;
+  const preview=document.getElementById("previewCalculo");
+  if(preview){preview.style.display="none";preview.innerHTML="";}
+}
+function calcularAmbiente(){
+  const largura=num("largura"), comprimento=num("comprimento");
+  let metalon=Math.max(0,Math.ceil(num("metalon")));
+  const rodaforro=Math.max(0,Math.ceil(num("rodaforro")));
+
+  if(largura<=0||comprimento<=0){
+    alert("Informe largura e comprimento maiores que zero.");
+    return null;
+  }
+
+  // Até 5 m de comprimento, o Metalon é calculado automaticamente:
+  // largura / 0,60 - 1. Se não for inteiro, arredonda para cima.
+  // Acima de 5 m, o cliente deve informar manualmente a quantidade.
+  if(comprimento<=5){
+    metalon=Math.max(0,Math.ceil((largura/0.60)-1));
+    document.getElementById("metalon").value=metalon;
+  } else if(metalon<=0){
+    alert("Para comprimento acima de 5 metros, informe manualmente a quantidade de Metalon.");
+    document.getElementById("metalon").focus();
+    return null;
+  }
+
+  const LARGURA_REGUA=0.20;
+  const PRECO_M2_PVC=25;
+  const PRECO_METALON=22;
+  const PRECO_RODAFORRO=45;
+  const PRECO_SERVICO_M2=60;
+  const folhasDisponiveis=[1,2,3,3.5,4,5,6];
+
+  // O comprimento da folha é escolhido automaticamente.
+  // A folha precisa ser pelo menos do tamanho do comprimento do ambiente.
+  const folha=folhasDisponiveis.find(f=>f+1e-9>=comprimento);
+
+  if(!folha){
+    alert("Tamanho não disponível. O maior comprimento de folha disponível é 6 metros.");
+    return null;
+  }
+
+  // Quantidade de réguas de 20 cm para cobrir a largura.
+  const tiras=Math.ceil((largura-1e-9)/LARGURA_REGUA);
+
+  // Quantas peças do comprimento do ambiente cabem em cada folha inteira.
+  const cortesPorFolha=Math.max(1,Math.floor((folha+1e-9)/comprimento));
+
+  // Cada folha atende cortes completos. Ex.: folha 3 m / ambiente 1,50 m = 2 cortes.
+  const folhas=Math.ceil(tiras/cortesPorFolha);
+
+  // Área efetivamente comprada, baseada na régua de 20 cm e no comprimento da folha.
+  const area=largura*comprimento;
+  const areaComprada=folhas*LARGURA_REGUA*folha;
+  const perda=Math.max(0,areaComprada-area);
+
+  const custoPVC=areaComprada*PRECO_M2_PVC;
+  const custoMetalon=metalon*PRECO_METALON;
+  const custoRodaforro=rodaforro*PRECO_RODAFORRO;
+  const material=custoPVC+custoMetalon+custoRodaforro;
+
+  const valorM2=area*PRECO_SERVICO_M2;
+  const valorMinimo=material+200;
+  const total=Math.max(valorM2,valorMinimo);
+
+  return {
+    ambiente:ambienteSelecionado,
+    largura,comprimento,area,
+    folha,cortesPorFolha,folhas,tiras,
+    areaPVC:areaComprada,perda,
+    metalon,rodaforro,
+    custoPVC,custoMetalon,custoRodaforro,material,
+    valorM2,total,
+    observacao:document.getElementById("observacao").value.trim()
+  };
+}
+document.getElementById("adicionar").addEventListener("click",()=>{
+  const item=calcularAmbiente();
+  if(!item)return;
+  ambientes.push(item);
+  render();
+  limparCampos();
+});
+
+function render(){
+  const box=document.getElementById("ambientes");
+  box.innerHTML="";
+
+  ambientes.forEach((a,i)=>{
+    const div=document.createElement("div");
+    div.className="ambiente-card";
+    div.innerHTML=`
+      <div class="ambiente-top">
+        <h3>${a.ambiente}</h3>
+        <button class="remove" data-i="${i}">Excluir</button>
+      </div>
+      <p><strong>Medida: ${a.largura.toFixed(2).replace(".",",")} m × ${a.comprimento.toFixed(2).replace(".",",")} m</strong></p>
+      <p><strong>Valor do ambiente: ${moeda(a.total)}</strong></p>
+    `;
+    box.appendChild(div);
+  });
+
+  box.querySelectorAll(".remove").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      ambientes.splice(Number(btn.dataset.i),1);
+      render();
+    });
+  });
+
+  if(!ambientes.length){
+    document.getElementById("resumo").style.display="none";
+    return;
+  }
+
+  let area=0,total=0;
+  ambientes.forEach(a=>{area+=a.area;total+=a.total;});
+
+  document.getElementById("resumo").style.display="block";
+  document.getElementById("totalGeral").textContent=moeda(total);
+  document.getElementById("linhas").innerHTML=ambientes.map((a,i)=>
+    `<div class="row"><span>${i+1}. ${a.ambiente}</span><strong>${moeda(a.total)}</strong></div>`
+  ).join("");
+}
+document.getElementById("limparAtual").addEventListener("click",limparCampos);
+
+document.getElementById("calcularAtual").addEventListener("click",()=>{
+  const item=calcularAmbiente();
+  const box=document.getElementById("previewCalculo");
+  if(!item){
+    box.style.display="none";
+    return;
+  }
+  box.innerHTML=`<strong>${item.ambiente}</strong><br><span style="font-size:14px;font-weight:500">${item.largura.toFixed(2).replace(".",",")} m × ${item.comprimento.toFixed(2).replace(".",",")} m</span><br><span style="font-size:20px">Valor: <strong>${moeda(item.total)}</strong></span>`;
+  box.style.display="block";
+});
+
+function mensagemWhatsApp(){
+  let texto=`*SOUZA INSTALAÇÕES - ORÇAMENTO*%0A%0A`;
+  ambientes.forEach((a,i)=>{
+    texto+=`*${encodeURIComponent(a.ambiente)}* — *${encodeURIComponent(moeda(a.total))}*%0A`;
+  });
+  return "https://wa.me/5522974043596?text="+texto;
+}
+document.getElementById("whatsapp").addEventListener("click",()=>{
+  if(!ambientes.length){alert("Adicione pelo menos um ambiente.");return;}
+  window.open(mensagemWhatsApp(),"_blank");
+});
+
+document.getElementById("imprimir").addEventListener("click",()=>{
+  if(!ambientes.length){alert("Adicione pelo menos um ambiente.");return;}
+  window.print();
+});
+
+const STORAGE_KEY="souza_orcamentos_v6";
+
+function getSalvos(){
+  try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]")}
+  catch(e){return[]}
+}
+function setSalvos(v){localStorage.setItem(STORAGE_KEY,JSON.stringify(v))}
+
+function renderSalvos(filtro=""){
+  const box=document.getElementById("listaSalvos");
+  if(!box)return;
+  const f=(filtro||"").toLowerCase();
+  const lista=getSalvos().filter(x=>
+    (`${x.cliente||""} ${x.telefone||""} ${x.endereco||""}`).toLowerCase().includes(f)
+  );
+  if(!lista.length){
+    box.innerHTML='<div class="notice">Nenhum orçamento encontrado.</div>';
+    return;
+  }
+  box.innerHTML=lista.map(x=>`
+    <div style="border:1px solid #d8dee5;border-radius:10px;padding:14px;margin-top:10px;background:#fafbfc">
+      <strong>${escapeHtml(x.cliente)}</strong><br>
+      Telefone: ${escapeHtml(x.telefone||"—")}<br>
+      Endereço: ${escapeHtml(x.endereco||"—")}<br>
+      Data: ${escapeHtml(x.data)}<br>
+      <strong>Valor: ${moeda(x.total)}</strong><br>
+      <button class="btn dark" style="margin-top:10px" onclick="abrirSalvo(${x.id})">Abrir orçamento</button>
+      <button class="btn" style="margin-top:10px" onclick="excluirSalvo(${x.id})">Excluir</button>
+    </div>`).join("");
+}
+function escapeHtml(v){
+  return String(v).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+}
+
+function salvarOrcamento(){
+  // Se o usuário ainda estiver preenchendo o ambiente atual,
+  // calcula e adiciona automaticamente antes de salvar.
+  if(!ambientes.length){
+    const atual=calcularAmbiente();
+    if(!atual)return;
+    ambientes.push(atual);
+    render();
+    limparCampos();
+  }
+  const cliente=document.getElementById("cliente").value.trim();
+  if(!cliente){
+    alert("Informe o nome do cliente para salvar o orçamento.");
+    document.getElementById("cliente").focus();
+    return;
+  }
+  const telefone=document.getElementById("telefone").value.trim();
+  const endereco=document.getElementById("endereco").value.trim();
+  const area=ambientes.reduce((s,a)=>s+a.area,0);
+  const total=ambientes.reduce((s,a)=>s+a.total,0);
+
+  const lista=getSalvos();
+  const registro={
+    id:Date.now(),
+    cliente,telefone,endereco,
+    data:new Date().toLocaleString("pt-BR"),
+    area,total,
+    ambientes:JSON.parse(JSON.stringify(ambientes))
+  };
+  lista.unshift(registro);
+  setSalvos(lista);
+  alert("Orçamento salvo com sucesso! Você poderá buscá-lo pelo nome ou telefone.");
+  renderSalvos();
+}
+
+function abrirSalvo(id){
+  const x=getSalvos().find(a=>a.id===id);
+  if(!x)return;
+  document.getElementById("cliente").value=x.cliente||"";
+  document.getElementById("telefone").value=x.telefone||"";
+  document.getElementById("endereco").value=x.endereco||"";
+  ambientes.length=0;
+  (x.ambientes||[]).forEach(a=>ambientes.push(a));
+  render();
+  document.getElementById("orcamento").scrollIntoView({behavior:"smooth"});
+}
+
+function excluirSalvo(id){
+  if(confirm("Excluir este orçamento?")){
+    setSalvos(getSalvos().filter(x=>x.id!==id));
+    renderSalvos(document.getElementById("busca").value);
+  }
+}
+
+document.getElementById("salvarOrcamento").addEventListener("click",salvarOrcamento);
+document.getElementById("salvarOrcamentoTopo").addEventListener("click",salvarOrcamento);
+document.getElementById("buscar").addEventListener("click",()=>renderSalvos(document.getElementById("busca").value));
+document.getElementById("todos").addEventListener("click",()=>{
+  document.getElementById("busca").value="";
+  renderSalvos();
+});
+renderSalvos();
+
+</script>
+</body>
+</html>
